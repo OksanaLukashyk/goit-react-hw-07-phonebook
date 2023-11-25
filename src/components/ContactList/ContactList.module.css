@@ -1,0 +1,22 @@
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  padding: 20px;
+  /* overflow: overlay; */
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #828282;
+  /* Колір полоси скролбару */
+  border-radius: 3px;
+  /* Радіус кутів */
+}
