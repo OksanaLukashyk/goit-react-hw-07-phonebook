@@ -1,5 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// Використовуємо саме createAsyncThunk для роботи з запитами Для отримання відфільтрованих контактів, краще за все, використати createSelector . Так наш код в компоненті contactsList буде чистіший, а селектор створений за допомогою createSelector буде мемоізований, тобто який перераховує contacts, коли змінюється значення state.contacts або state.filter, але не тоді, коли зміни відбуваються в інших (незалежних) частинах дерева.
+// export const selectVisibleContacts = createSelector(
+// [ selectContacts, selectFilter],
+//  (contacts, filter) => {
+//    return contacts.filter(contact => contact.name.toLowerCase()
+//     .includes(filter.toLowerCase()))
+//  }
+
 // const contactsDataBase = [
 //   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
 //   { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
