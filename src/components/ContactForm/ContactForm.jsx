@@ -35,7 +35,6 @@ export const ContactForm = () => {
     }
 
     dispatch(addContact(contactData));
-
     form.reset();
   };
 

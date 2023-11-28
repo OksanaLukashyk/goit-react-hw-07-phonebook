@@ -23,12 +23,12 @@ export const App = () => {
 
       <h1>Phonebook</h1>
       <ContactForm />
+      <h2>Contacts</h2>
       {error &&
         Notify.failure(
           `Oops, some error occured... Please try reloading the page`,
           { timeout: 6000 }
         )}
-      <h2>Contacts</h2>
       <Filter />
       <ContactList />
     </div>
