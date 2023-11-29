@@ -4,10 +4,10 @@
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  min-width: 300px;
+  width: 400px;
   height: 200px;
-  padding: 20px;
-  overflow: auto;
+  padding: 10px;
+  overflow-x: auto;
   /* overflow-y: auto; */
 }
 
