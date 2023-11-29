@@ -9,9 +9,10 @@ export const ContactListItem = ({ name, phone, id }) => {
 
   return (
     <li className={css.contactListItem} key={id}>
-      <p>
-        <span className={css.contactName}>{name}</span>: {phone}
-      </p>
+      <div className={css.contactInfo}>
+        <p className={css.contactName}>{name}:</p>
+        <p className={css.contactPhone}>{phone}</p>
+      </div>
       <button
         className={css.deleteContactBtn}
         type="button"
