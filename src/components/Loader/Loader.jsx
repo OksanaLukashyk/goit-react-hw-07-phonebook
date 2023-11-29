@@ -6,8 +6,8 @@ export const Loader = () => {
   return (
     <div className={css.loader}>
       <ThreeDots
-        height="90"
-        width="90"
+        height="100"
+        width="100"
         radius="10"
         color="black"
         ariaLabel="three-dots-loading"
